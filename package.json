@@ -1,0 +1,13 @@
+{
+  "name": "paper-room",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test:e2e": "node tests/complete-game.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1"
+  }
+}

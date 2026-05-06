@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111111" />
+    <title>The Paper Room</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar" aria-label="Game controls">
+        <button class="icon-button" id="prevButton" type="button" aria-label="Previous puzzle" title="Previous">
+          <span aria-hidden="true">&lt;</span>
+        </button>
+        <div class="identity" aria-label="The Paper Room">
+          <span class="identity-title">THE PAPER ROOM</span>
+        </div>
+        <button class="icon-button" id="hintButton" type="button" aria-label="Hint" title="Hint">
+          <span aria-hidden="true">?</span>
+        </button>
+      </header>
+
+      <div id="progress" class="progress" aria-label="Puzzle progress"></div>
+
+      <main id="stage" class="stage" aria-live="polite"></main>
+
+      <footer class="bottombar" aria-label="Game actions">
+        <button class="quiet-button" id="resetPuzzleButton" type="button">reset</button>
+        <button class="quiet-button" id="answerButton" type="button">reveal</button>
+      </footer>
+    </div>
+
+    <dialog id="hintDialog" class="paper-dialog" aria-labelledby="hintTitle">
+      <div class="dialog-top">
+        <h2 id="hintTitle">Hint</h2>
+        <button class="icon-button" id="closeHintButton" type="button" aria-label="Close hint">x</button>
+      </div>
+      <div id="hintContent" class="hint-copy"></div>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
