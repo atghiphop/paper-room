@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
+    "test": "node --test tests/server.test.mjs",
     "test:e2e": "node tests/complete-game.mjs"
   },
   "devDependencies": {
