@@ -20,5 +20,6 @@ Open `http://127.0.0.1:4173`.
 ## Test
 
 ```sh
+npm test
 npm run test:e2e
 ```
